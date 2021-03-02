@@ -10,12 +10,21 @@
 
 ```css 
 
+* {
+    list-style: none; /* sem os marcadores de lista*/
+    text-decoration: none; /* sem sublinhados nos links*/
+}
+
 header {
 
 height: 100vh; 
 /* vh: view height, altura da página ou visualização */
 overflow: hidden; 
 /* desabilita a possilidade do cabeçalho passar o tamanho da janela */
+}
+
+.hamburguer {
+    z-index: 100; /* plano cartesiano z que permite que o elemento fique à frente do background */
 }
 
 .img-wrapper img {
@@ -59,5 +68,10 @@ object-fit:
 
 # O devtools é fantástico pois nos permite alterar para visualização qualquer página, além de podermos copiar, para nosso código-fonte, qualquer modificação realizada; 
 
+# Aviso (warning: LF will be replaced by CRLF in testes.html The file will have its original line endings in your working directory);
+
+# Elemento "aside" deve ser usado nas barras laterais;
+
+# Colocar "required" em contatos é importante, isso faz com a mensagem seja respondida no email enviado pelo usuário; importante que se for sugestão, críticas o campo email e nome seja facultativo
 
 
