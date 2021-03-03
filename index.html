@@ -26,14 +26,14 @@
         <span>Fechar</span>
     </div>
 
-      <header>
+      <header id="home">
           <div class="img-wrapper">
               <img src="imagens/bg.jpg" alt="backgroundpicture"/>
           </div>
 
           <div class="banner">
               <h1>Web Developer & Front End Designers</h1>
-              <p>Ana Paula Baptista</p>
+              <p>Ana Palia Baptista</p>
               <button>Saiba Mais</button>
           </div>
       </header>
@@ -41,12 +41,13 @@
       <aside class="sidebar">
           <nav>
               <ul class="menu">
-                  <li class="menu-item"><a href="#" class="menu-link">Home        </a></li>
-                  <li class="menu-item"><a href="#" class="menu-link">Conhecimento</a></li>
-                  <li class="menu-item"><a href="#" class="menu-link">Projetos    </a></li>
-                  <li class="menu-item"><a href="#" class="menu-link">Contato     </a></li>
-                  <li class="menu-item"><a href="#" class="menu-link">Orçamento   </a></li>
+                  <li class="menu-item"><a href="#" class="menu-link">Home        </a>
+                  <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a>
+                  <li class="menu-item"><a href="#projetos" class="menu-link">Projetos    </a>
+                  <li class="menu-item"><a href="#contatos" class="menu-link">Contato     </a>
+                  <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento   </a>
               </ul>
+              
           </nav>
 
             <div class="social-media">
@@ -58,7 +59,7 @@
       </aside>
 
       
-    <section class="sessao-conhecimentos">
+    <section class="sessao-conhecimentos" id="conhecimentos">
           <div class="sessao-header">
           <sessao-header>
               <h1>Conhecimentos</h1>
@@ -131,7 +132,7 @@
     </section>
     
 
-    <section class="sessao-projetos">
+    <section class="sessao-projetos" id="projetos">
         <div class="sessao-header">
             <h1>Projetos</h1>
         </div>
@@ -161,7 +162,7 @@
                 <div class="card-info">
                     <h2>Casa Bela</h2>
                     <h3>HTML</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita perferendis ducimus, ad repellendus nulla quasi laudantium sequi rerum neque quis rem quos ratione dolor saepe aperiam. Est tenetur iusto incidunt!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita perferendis ducimus, ad repellendus nlila quasi laudantium sequi rerum neque quis rem quos ratione dolor saepe aperiam. Est tenetur iusto incidunt!</p>
                     <button class="button">Saiba Mais</button>
                 </div>
                 </div>
@@ -170,7 +171,7 @@
         </div>
     </section>
 
-    <section class="sessao-contato">
+    <section class="sessao-contato" id="contatos">
         <div class="contato-wrapper">
             <div class="contato-left">
             </div>
@@ -195,7 +196,7 @@
         </div>
     </section>
 
-    <section class="sessao-orcamento">
+    <section class="sessao-orcamento" id="orcamento">
         <div class="orcamento-wrapper">
             <h1>Faça um Orçamento</h1>
             <form action="">
@@ -215,16 +216,35 @@
                     </div>
                 </div>
                     <label for="prazo">Prazo</label>
-                    <input type="range" name="prazo" id="prazo">
+                    <input type="range" name="prazo" id="prazo" min="1" max="10">
+                    <label id="preco"> R$ 0,00</label>
                     <button type="submit" class="button btn-orcamento">Enviar</button>
-                              
-            </form>
+           </form>
         </div>
     </section>
     
+    <footer>
+       <div class="footer-content">
+           <p>
+               Copyright &copy; 2021, ETECIA DS - Todos os direitos reservados
+            </p>
+
+            <div class="social-list">
+            <ul>
+               <li><a href=""><i class="fab fa-github"></i></a>
+               <li><a href=""><i class="fab fa-linkedin"></i></a>
+               <li><a href=""><i class="fab fa-twitter"></i></a>
+               <li><a href=""><i class="fab fa-facebook"></i></a>
+            </ul>
+            </div>
+       </div> 
+    </footer>
+    <a href="#home" id="link-topo"><i class="fas fa-arrow-up"></i></a>
+
   </div>
 
 </body>
 
     <script src="script.js"></script>
+
 </html>
